@@ -234,98 +234,98 @@ const Roadmap = ({ roadmapData }) => {
       </style>
 
       <div id="roadmap-container"></div>
-      <div class="timeline">
+      <div className="timeline">
         <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables">
-          <div class="container left">
-            <i class="icon fa fa-home"></i>
-            <div class="content">
+          <div className="container left">
+            <i className="icon fa fa-home"></i>
+            <div className="content">
               <h2>All About Variables</h2>
             </div>
           </div>
         </a>
         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures">
-        <div class="container right">
-          <i class="icon fa fa-gift"></i>
-          <div class="content">
+        <div className="container right">
+          <i className="icon fa fa-gift"></i>
+          <div className="content">
             <h2>Datatypes in JS</h2>
           </div>
         </div>
         </a>
         <a href="https://www.w3schools.com/js/js_type_conversion.asp">
-        <div class="container left">
-          <i class="icon fa fa-user"></i>
-          <div class="content">
+        <div className="container left">
+          <i className="icon fa fa-user"></i>
+          <div className="content">
             <h2>Typecasting in JS</h2>
           </div>
         </div>
         </a>
         <a href="https://www.freecodecamp.org/news/how-to-loop-through-an-array-in-javascript-js-iterate-tutorial/">
-        <div class="container right">
-          <i class="icon fa fa-running"></i>
-          <div class="content">
+        <div className="container right">
+          <i className="icon fa fa-running"></i>
+          <div className="content">
             <h2>Loops and Iteration</h2>
           </div>
         </div>
         </a>
         <a href="https://developer.mozilla.org/en-US/docs/Glossary/Control_flow">
-        <div class="container left">
-          <i class="icon fa fa-cog"></i>
-          <div class="content">
+        <div className="container left">
+          <i className="icon fa fa-cog"></i>
+          <div className="content">
             <h2>Control Flow</h2>
           </div>
         </div>
         </a>
         <a href="https://www.w3schools.com/js/js_strict.asp">
-        <div class="container right">
-          <i class="icon fa fa-certificate"></i>
-          <div class="content">
+        <div className="container right">
+          <i className="icon fa fa-certificate"></i>
+          <div className="content">
             <h2>Strict Mode</h2>
           </div>
         </div>
         </a>
         <a href="https://javascript.info/async-await">
-        <div class="container left">
-          <i class="icon fa fa-cog"></i>
-          <div class="content">
+        <div className="container left">
+          <i className="icon fa fa-cog"></i>
+          <div className="content">
             <h2>async/await</h2>
           </div>
         </div>
         </a>
         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules">
-        <div class="container right">
-          <i class="icon fa fa-certificate"></i>
-          <div class="content">
+        <div className="container right">
+          <i className="icon fa fa-certificate"></i>
+          <div className="content">
             <h2>ESModules</h2>
           </div>
         </div>
         </a>
         <a href="https://developer.chrome.com/docs/devtools/javascript/">
-        <div class="container left">
-          <i class="icon fa fa-certificate"></i>
-          <div class="content">
+        <div className="container left">
+          <i className="icon fa fa-certificate"></i>
+          <div className="content">
             <h2>Debug Javascript</h2>
           </div>
         </div>
         </a>
         <a href="https://medium.com/coding-blocks/catching-memory-leaks-with-chrome-devtools-57b03acb6bb9">
-        <div class="container right">
-          <i class="icon fa fa-certificate"></i>
-          <div class="content">
+        <div className="container right">
+          <i className="icon fa fa-certificate"></i>
+          <div className="content">
             <h2>Debugging using Chrome dev tools</h2>
           </div>
         </div>
         </a>
         <a href="https://www.w3schools.com/whatis/whatis_frontenddev.asp">
-        <div class="container left">
-          <i class="icon fa fa-certificate"></i>
-          <div class="content">
+        <div className="container left">
+          <i className="icon fa fa-certificate"></i>
+          <div className="content">
             <h2>Frontend</h2>
           </div>
         </div>
         </a>
 
       </div>
-      <div class="content" onClick={predictArticles} value={result} onChange={e=>setResult(e.target.value)}>Articles</div>
+      <div className="content" onClick={predictArticles} value={result} onChange={e=>setResult(e.target.value)}>Articles</div>
     </div>
   );
 };
