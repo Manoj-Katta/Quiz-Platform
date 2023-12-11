@@ -4,7 +4,7 @@ import { Header, Footer, Sidebar, MobileMenu ,Roadmap} from '.';
 import { Route, Routes, useLocation } from 'react-router-dom';
 
 import { Home, Login, Signup, NoMatch, Dashboard, Leaderboards, Profile, QuizPage } from '../pages';
-
+import Articles from '../pages/Articles';
 import Auth from '../utils/auth';
 import {  VocabQuiz } from '../utils/quizGenerator';
 import {  lessonData } from '../data';
@@ -84,6 +84,10 @@ const MainSection = () => {
               path="/roadmap"
               element={<Roadmap roadmapData={roadmapData} />}
             />
+            <Route
+            path="/articles"
+            element={<Articles />}
+          />
             <Route 
               path="*"
               element={<NoMatch />}

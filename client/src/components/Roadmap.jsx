@@ -1,7 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import flowchart from 'flowchart.js';
 
 const Roadmap = ({ roadmapData }) => {
+
+  const [result,setResult] = useState('');
   useEffect(() => {
     const generateRoadmapCode = (data) => {
       let code = 'st=>start: Start\n';
@@ -23,6 +25,10 @@ const Roadmap = ({ roadmapData }) => {
     // diagramContainer.innerHTML = '';
     // diagram.drawSVG('roadmap-container');
   }, [roadmapData]);
+
+  const predictArticles=()=>{
+    console.log("articles");
+  }
 
   return (
     <div>
@@ -319,6 +325,7 @@ const Roadmap = ({ roadmapData }) => {
         </a>
 
       </div>
+      <div class="content" onClick={predictArticles} value={result} onChange={e=>setResult(e.target.value)}>Articles</div>
     </div>
   );
 };

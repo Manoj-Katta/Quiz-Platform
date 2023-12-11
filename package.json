@@ -23,7 +23,10 @@
     "concurrently": "^8.0.1"
   },
   "dependencies": {
+    "@tensorflow/tfjs": "^4.14.0",
     "codemirror": "^6.0.1",
+    "express": "^4.18.2",
+    "path": "^0.12.7",
     "react-helmet": "^6.1.0",
     "react-scripts": "^5.0.1"
   }

@@ -7,12 +7,14 @@ import connectDB from './config/connection.js'; // import connection to MongoDB
 import { typeDefs, resolvers } from './schemas/index.js'; // import typeDefs and resolvers
 import { authMiddleware } from './utils/auth.js'; // import authMiddleware for authentication
 import cors from 'cors';
-
+import { join, dirname } from 'path';
+import { fileURLToPath } from 'url';
 dotenv.config(); // Load environment variables from .env file
 
 const PORT = process.env.PORT || 3001;
 const mongoUrl = 'mongodb+srv://2021ucs0106:9x6hM0egCSi4t5Qf@cluster0.hm3fpk3.mongodb.net/Roadmaps?retryWrites=true&w=majority';
-
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 // Create a new instance of an Apollo server with the GraphQL schema
 const server = new ApolloServer({
   typeDefs,
@@ -21,6 +23,9 @@ const server = new ApolloServer({
 });
 
 const app = express(); // Create a new instance of an Express server
+const modelsPath = join(__dirname, '..', 'models');
+app.use('/models', express.static(modelsPath));
+
 app.use(express.urlencoded({ extended: true })); // This sets up middleware to parse incoming requests with urlencoded payloads
 app.use(express.json()); // This sets up middleware to parse incoming requests with JSON payloads
 

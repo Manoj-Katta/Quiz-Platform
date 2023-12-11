@@ -11,6 +11,7 @@
   "dependencies": {
     "@apollo/client": "^3.7.12",
     "@reduxjs/toolkit": "^1.9.5",
+    "@tensorflow/tfjs": "^4.14.0",
     "@uiw/react-codemirror": "^4.21.21",
     "flowchart.js": "^1.18.0",
     "graphql": "^16.8.1",
